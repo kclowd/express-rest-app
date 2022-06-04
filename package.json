@@ -1,0 +1,22 @@
+{
+  "name": "express-rest-app",
+  "version": "1.0.0",
+  "description": "a sample RESTful API using Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kclowd/express-rest-app.git"
+  },
+  "author": "Katy Chambers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kclowd/express-rest-app/issues"
+  },
+  "homepage": "https://github.com/kclowd/express-rest-app#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
