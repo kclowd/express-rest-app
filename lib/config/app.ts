@@ -1,21 +1,18 @@
 
 import * as express from "express";
 import * as bodyParser from "body-parser";
-import { TestRoutes } from "../routes/test_routes";
-import { RedCircleRoutes } from "../routes/red-circle_routes";
 import { CommonRoutes } from "../routes/common_routes";
+import { StockRoutes } from "../routes/stock_routes";
 
 class App {
    public app: express.Application;
-   private test_routes: TestRoutes = new TestRoutes();
-   private redCircle_routes: RedCircleRoutes = new RedCircleRoutes();
+   private stock_routes: StockRoutes = new StockRoutes();
    private common_routes: CommonRoutes = new CommonRoutes();
 
    constructor() {
       this.app = express();
       this.config();
-      this.test_routes.route(this.app);
-      this.redCircle_routes.route(this.app);
+      this.stock_routes.route(this.app);
       this.common_routes.route(this.app);
    }
 private config(): void {
